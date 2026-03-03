@@ -157,17 +157,15 @@ Expected response:
 
 ### 2) `/App/hello?name=Pedro` Response
 
-![Hello endpoint screenshot](docs/images/hello-endpoint.png)
+<img width="1885" height="1021" alt="image" src="https://github.com/user-attachments/assets/07ca3038-4264-49d0-88e7-f068dc4452ed" />
 
 ### 3) `/App/pi` Response
 
-![PI endpoint screenshot](docs/images/pi-endpoint.png)
+<img width="1876" height="1032" alt="image" src="https://github.com/user-attachments/assets/e18254a6-4023-421e-9e07-ce20f1b8834d" />
 
 ### 4) `/index.html` Static File
 
 ![Static file screenshot](docs/images/static-index.png)
-
-> Replace the image paths above with your real screenshots or keep these placeholders and add files under `docs/images/`.
 
 ---
 
