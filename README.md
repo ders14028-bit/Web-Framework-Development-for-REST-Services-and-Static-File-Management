@@ -153,6 +153,25 @@ Expected response:
 
 - HTTP 200 + HTML content from `webroot/index.html`
 
+### Automated integration tests (JUnit 5)
+
+In addition to manual URL checks, this project includes automated integration tests in:
+
+- `src/test/java/com/webframework/example/AppIntegrationTest.java`
+
+These tests start the framework on a free port and validate:
+
+- `/App/hello` returns `hello world`
+- `/App/hello?name=Pedro` returns `hello Pedro`
+- `/App/pi` returns a PI value
+- `/index.html` is served with HTTP 200
+
+Run all tests with:
+
+```bash
+mvn test
+```
+
 ---
 
 ## Evidence (Add Your Screenshots Here)
@@ -198,6 +217,12 @@ Expected response:
 		  └── resources
 				└── webroot
 					 └── index.html
+	 └── test
+		  └── java
+				└── com
+					 └── webframework
+						  └── example
+								 └── AppIntegrationTest.java
 ```
 
 ---
