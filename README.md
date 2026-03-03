@@ -135,7 +135,8 @@ Expected response:
 
 ### 1) Running Server in Terminal
 
-![Server running screenshot](docs/images/server-running.png)
+<img width="1020" height="624" alt="image" src="https://github.com/user-attachments/assets/61631d92-ee12-4fcd-998a-905dd73b0ac5" />
+
 
 ### 2) `/App/hello?name=Pedro` Response
 
