@@ -18,6 +18,30 @@ Transform a simple HTTP server into a reusable mini-framework so developers can 
 
 ---
 
+## Key Definitions and Important Aspects
+
+### Key Definitions
+
+- **Framework:** A reusable software foundation that provides structure, conventions, and core services so developers can focus on application logic instead of low-level boilerplate.
+- **Web Framework:** A framework specialized for HTTP applications, typically including routing, request/response handling, and static content support.
+- **REST Service:** An HTTP endpoint that exposes application functionality using URL-based resources and standard HTTP methods.
+- **Route:** A mapping between a URL path (for example, `/App/hello`) and a handler function that generates a response.
+- **Request:** The incoming HTTP message from a client, including method, URI, protocol, and query parameters.
+- **Response:** The outgoing HTTP message from the server, including status code, headers, and body.
+- **Query Parameter:** A key-value pair in the URL (e.g., `?name=Pedro`) used to send optional input values.
+- **Static File:** A file served directly without business logic execution (e.g., HTML, CSS, JavaScript, images).
+
+### Important Aspects of This Topic
+
+1. **Separation of concerns:** A framework should separate transport logic (sockets and HTTP parsing) from business logic (route handlers).
+2. **Developer ergonomics:** APIs such as `get(path, lambda)` reduce complexity and make backend code easier to read and maintain.
+3. **HTTP fundamentals:** Correct status codes, content types, and request parsing are essential for predictable client-server behavior.
+4. **Extensibility:** A good base design should make it easy to add future features such as more HTTP methods, middleware, and error handling.
+5. **Static + dynamic integration:** Real web apps require both REST endpoints and static assets working together.
+6. **Maintainability and delivery quality:** Maven structure, reproducible execution steps, and clear documentation are part of professional software engineering.
+
+---
+
 ## What Is Implemented
 
 ### 1) GET method for REST services
@@ -180,10 +204,12 @@ Expected response:
 
 ## Conclusions
 
-1. A simple socket-based server can be evolved into a reusable framework.
-2. Route registration with lambdas significantly improves developer usability.
-3. Query parsing and static file support are essential for practical web apps.
-4. Proper project structure (Maven + documentation + tests) makes the delivery professional and reproducible.
+1. This project demonstrates that a basic socket server can be transformed into a practical mini-framework by introducing routing, request abstraction, and static file handling.
+2. Lambda-based route registration provides a cleaner developer experience and keeps application code focused on business behavior rather than transport details.
+3. Query parameter extraction (`req.getValues`) is a small but critical capability that enables dynamic service responses and more realistic API design.
+4. Static file support closes the gap between backend services and real web application needs, allowing the same server to deliver both API responses and frontend assets.
+5. The architecture is intentionally simple, but it already reflects important distributed-system concepts: request dispatch, protocol contracts, and separation of concerns.
+6. Using Maven, Git, and a structured README improves reproducibility, collaboration, and evaluation quality, which are key outcomes for this assignment.
 
 ---
 
