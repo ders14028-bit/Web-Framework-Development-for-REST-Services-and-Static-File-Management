@@ -18,24 +18,6 @@ Transform a simple HTTP server into a reusable mini-framework so developers can 
 
 ---
 
-## Overview
-
-High-level request flow implemented in this project:
-
-```text
-HTTP Request
-	↓
-Request line parsing (method, URI, protocol)
-	↓
-Route resolution (registered GET services)
-	↓
-If no REST route: static file lookup
-	↓
-HTTP response (status, headers, body)
-```
-
----
-
 ## What Is Implemented
 
 ### 1) GET method for REST services
@@ -216,3 +198,4 @@ Expected response:
 - Java Networking (`ServerSocket`, `Socket`, `URI`)
 - Java I/O (`BufferedReader`, `InputStream`, `OutputStream`)
 - Maven documentation: https://maven.apache.org/
+- https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/222974/mod_resource/content/0/NamesNetworkClientService.pdf
