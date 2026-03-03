@@ -147,7 +147,8 @@ Expected response:
 
 ### 4) `/index.html` Static File
 
-![Static file screenshot](docs/images/static-index.png)
+<img width="905" height="436" alt="image" src="https://github.com/user-attachments/assets/8fda4e6b-73ed-4244-8f09-eb04dfe83aef" />
+
 
 ---
 
