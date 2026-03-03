@@ -174,7 +174,7 @@ mvn test
 
 ---
 
-## Evidence (Add Your Screenshots Here)
+## Evidence 
 
 ### 1) Running Server in Terminal
 
