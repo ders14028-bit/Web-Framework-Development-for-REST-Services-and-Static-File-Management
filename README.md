@@ -31,7 +31,7 @@ Transform a simple HTTP server into a reusable mini-framework so developers can 
 - **Query Parameter:** A key-value pair in the URL (e.g., `?name=Pedro`) used to send optional input values.
 - **Static File:** A file served directly without business logic execution (e.g., HTML, CSS, JavaScript, images).
 
-### Important Aspects of This Topic
+### Important Aspects 
 
 1. **Separation of concerns:** A framework should separate transport logic (sockets and HTTP parsing) from business logic (route handlers).
 2. **Developer ergonomics:** APIs such as `get(path, lambda)` reduce complexity and make backend code easier to read and maintain.
